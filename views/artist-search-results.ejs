@@ -1,0 +1,8 @@
+<h1>Artist search result:</h1>
+<div>
+    <% artistsResults.forEach(element => { %>
+        <h2><%- element.name %></h2>
+        <img src="<%- element.images[0] %>">
+        <a href="/albums/<%- element.id %>"><button>View albums</button></a>
+    <% }) %>
+</div>
